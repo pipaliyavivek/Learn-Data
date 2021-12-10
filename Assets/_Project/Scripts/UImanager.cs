@@ -7,6 +7,7 @@ using Sirenix.OdinInspector;
 
 public class UImanager : MonoBehaviour
 {
+    public static UImanager Instance;
     public TextMeshProUGUI mCoinText;
     public TextMeshProUGUI mDaimondText;
 
@@ -23,14 +24,12 @@ public class UImanager : MonoBehaviour
         get { return PlayerPrefs.GetInt(nameof(DaimondValue)); }
         set { PlayerPrefs.SetInt(nameof(DaimondValue), value); }
     }
+
+    private void Awake() => Instance = this;
+
     private void FixedUpdate()
     {
         mCoinText.text = CoinValue.ToString();
         mDaimondText.text = DaimondValue.ToString();
-    }
-    [Button]
-    void setCoinValue(int val)
-    {
-        CoinValue = val;
     }
 }
