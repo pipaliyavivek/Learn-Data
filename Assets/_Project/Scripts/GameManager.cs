@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private void Awake() => Instance = this;
     private string URL = "http://localhost/justdemo.txt";
-    public Button responsebtn;
-    public TextMeshProUGUI responseText;
     public PlayerList myplayrtlist = new PlayerList();
 
     void Start()
