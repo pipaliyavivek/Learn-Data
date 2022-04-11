@@ -1,0 +1,19 @@
+{
+	"player":[
+	 {
+		"Name":"MITUAL",
+		"Age": 54,
+		"mana":20
+	 },
+	 {
+		"Name":"Bandra",
+		"Age": 51,
+		"mana":427
+	 },
+	 {
+		"Name":"bcc",
+		"Age": 10,
+		"mana":24
+	 }
+	]
+}

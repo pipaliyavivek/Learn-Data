@@ -1,0 +1,10 @@
+{
+	"name":"vivekpipaliya",
+	"lives":3,
+	"health":0.8
+}
+{
+	"name":"Dd Rajesh",
+	"lives":10,
+	"health":0.8
+}

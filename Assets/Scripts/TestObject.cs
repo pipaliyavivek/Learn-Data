@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Socket.Quobject.SocketIoClientDotNet.Client;
 using UnityEngine;
 
 public class TestObject : MonoBehaviour {
-  private QSocket socket;
+ /* private QSocket socket;
 
   void Start () {
     Debug.Log ("start");
@@ -18,9 +17,10 @@ public class TestObject : MonoBehaviour {
     socket.On ("chat", data => {
       Debug.Log ("data : " + data);
     });
-  }
+  }*/
 
-  private void OnDestroy () {
-    socket.Disconnect ();
+  private void OnDestroy ()
+    {
+    //socket.Disconnect ();
   }
 }
